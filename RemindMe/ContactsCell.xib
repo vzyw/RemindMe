@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="KGk-i7-Jjw" customClass="ContactsCell" customModule="RemindMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friend" translatesAutoresizingMaskIntoConstraints="NO" id="a3B-oA-pNm">
+                        <rect key="frame" x="19" y="8" width="51" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="51" id="7EN-pP-nOa"/>
+                            <constraint firstAttribute="height" constant="51" id="PNx-0T-tBL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="25.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OF-IN-A6D">
+                        <rect key="frame" x="78" y="22" width="45" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8OF-IN-A6D" firstAttribute="top" secondItem="a3B-oA-pNm" secondAttribute="top" constant="14" id="Sgp-F0-4VD"/>
+                    <constraint firstItem="8OF-IN-A6D" firstAttribute="leading" secondItem="a3B-oA-pNm" secondAttribute="trailing" constant="8" id="bRw-xO-LZU"/>
+                    <constraint firstItem="a3B-oA-pNm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="et2-f9-VID"/>
+                    <constraint firstItem="a3B-oA-pNm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="11" id="xya-1e-o7V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImg" destination="a3B-oA-pNm" id="Ypv-If-9os"/>
+                <outlet property="nameLabel" destination="8OF-IN-A6D" id="c0H-S9-8iX"/>
+            </connections>
+            <point key="canvasLocation" x="83" y="43"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="friend" width="100" height="100"/>
+    </resources>
+</document>
