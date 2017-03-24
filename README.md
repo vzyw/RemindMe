@@ -1,4 +1,5 @@
 # RemindMe
+给好友发送一段语言留言，好友收到好可以等时间到时收听
 ## 安装
 ```
 git clone https://github.com/vzyw/RemindMe.git
